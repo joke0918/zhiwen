@@ -1,0 +1,43 @@
+{
+  "name": "cf-service-callcenter",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "doc": "cd doc && gitbook serve .",
+    "test": "mocha",
+    "pub-prod": "./deploy.sh production",
+    "pub-test": "./deploy.sh test"
+  },
+  "dependencies": {
+    "async": "^2.1.5",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-preset-node6": "^11.0.0",
+    "babel-register": "^6.24.0",
+    "body-parser": "~1.13.2",
+    "config": "^1.20.1",
+    "cookie-parser": "~1.3.5",
+    "cors": "^2.8.1",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "express-validator": "^2.20.4",
+    "ical-generator": "^0.2.7",
+    "jsonwebtoken": "^6.2.0",
+    "lodash": "^4.12.0",
+    "log4js": "^0.6.36",
+    "moment": "^2.17.1",
+    "morgan": "~1.6.1",
+    "mysql": "^2.10.2",
+    "request": "^2.72.0",
+    "request-promise": "^4.1.1",
+    "sequelize": "^3.29.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "superagent": "^1.8.3"
+  }
+}
